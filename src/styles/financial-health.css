@@ -1,0 +1,46 @@
+/* Spendora Financial Health — Bootstrap 5 compatible */
+.fh-page{--fh-purple:#8261e8;--fh-ink:#28233d;--fh-muted:#938da4;color:var(--fh-ink);width:100%;padding-bottom:18px}
+.fh-page *{box-sizing:border-box}
+.fh-hero{padding:34px 38px;border-radius:22px;background:linear-gradient(112deg,#ede7ff 0%,#f5efff 57%,#e3f7f1 100%);margin-bottom:24px;min-height:185px}
+.fh-eyebrow{display:inline-flex;align-items:center;gap:8px;color:#7956e1;font-size:11px;font-weight:800;letter-spacing:1.15px}
+.fh-hero h1{font-size:clamp(24px,2.8vw,34px);letter-spacing:-1px;font-weight:800;margin:14px 0 11px}
+.fh-hero p{font-size:13px;color:#827a96;line-height:1.7}
+.fh-hero-art{width:104px;height:104px;flex-shrink:0;border-radius:27px;background:rgba(255,255,255,.53);color:#8261e8;align-items:center;justify-content:center;transform:rotate(-8deg);box-shadow:0 12px 32px rgba(130,97,232,.09)}
+.fh-card,.fh-metric{background:#fff;border:1px solid #eeeaf5;border-radius:19px;box-shadow:0 5px 24px rgba(65,45,113,.025)}
+.fh-card{padding:27px}
+.fh-card-head{margin-bottom:22px;gap:12px}
+.fh-card-head h2{font-size:16px;font-weight:800;letter-spacing:-.3px;margin:0 0 7px}
+.fh-card-head p{font-size:12px;color:var(--fh-muted);margin:0;line-height:1.5}
+.fh-head-icon{width:40px;height:40px;border-radius:12px;background:#f1ecff;color:#8261e8;display:grid;place-items:center;flex-shrink:0}
+.fh-score-body{text-align:center;display:flex;flex-direction:column;align-items:center;padding:0 10px 9px}
+.fh-score-ring{width:188px;height:188px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#8867ec 0 var(--fh-score),#eee9fa var(--fh-score) 100%);margin:3px auto 20px;box-shadow:0 8px 24px rgba(130,97,232,.07)}
+.fh-score-center{width:153px;height:153px;background:#fff;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.fh-score-center strong{font-size:52px;line-height:1;font-weight:800;letter-spacing:-2px}
+.fh-score-center span{font-size:11px;color:#a49bb5;margin-top:7px}
+.fh-score-body h3{font-size:18px;font-weight:800;margin:0 0 9px}
+.fh-score-body>p{font-size:12px;line-height:1.7;color:var(--fh-muted);max-width:310px;margin:0 0 17px}
+.fh-risk-pill{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:9px 13px;font-size:11px;font-weight:800}
+.fh-risk-pill.low{background:#e4f8ee;color:#229a72}.fh-risk-pill.moderate{background:#fff3df;color:#b77b24}.fh-risk-pill.high{background:#fff0f0;color:#c9505c}
+.fh-forecast{background:linear-gradient(110deg,#f4f0ff,#f9f7ff);padding:20px 22px;border-radius:14px;display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.fh-forecast>span{font-size:11px;color:#8e82a9;font-weight:600}.fh-forecast>strong{font-size:clamp(25px,3vw,34px);letter-spacing:-1px;font-weight:800;color:#7655db}.fh-forecast>small{font-size:11px;color:#9c92af}.fh-forecast.is-negative>strong{color:#d25865}
+.fh-outlook-list>div{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 2px;border-bottom:1px solid #f1eef6;font-size:12px}
+.fh-outlook-list>div span{color:#827b93}.fh-outlook-list>div strong{font-size:12px;font-weight:800;white-space:nowrap}
+.fh-note{display:flex;align-items:center;gap:7px;color:#a49caf;font-size:10px;line-height:1.5;margin-top:14px}
+.fh-metric{padding:21px;display:flex;flex-direction:column;gap:12px;transition:box-shadow .2s ease}.fh-metric:hover{box-shadow:0 13px 32px rgba(94,68,160,.1)}
+.fh-metric-icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center}.fh-metric-icon.violet{background:#eee9ff;color:#805ee5}.fh-metric-icon.mint{background:#e1f7ed;color:#28a77e}.fh-metric-icon.blue{background:#e9f2ff;color:#5c95dc}.fh-metric-icon.peach{background:#fff0e6;color:#e3a06a}
+.fh-metric-label{font-size:12px;color:#817a91;font-weight:600}.fh-metric>strong{font-size:clamp(19px,2vw,25px);font-weight:800;letter-spacing:-.5px}.fh-metric>small{font-size:11px;color:#a59eaf;line-height:1.5}
+.fh-small-muted{display:inline-flex;align-items:center;gap:3px;font-size:11px;color:#a19aaf}
+.fh-risk-track{height:12px;border-radius:20px;background:linear-gradient(90deg,#48c59a 0%,#b8dca5 34%,#f2c36d 55%,#f49d86 75%,#e66d79 100%);position:relative;margin-top:20px}
+.fh-risk-track>span{position:absolute;top:50%;width:20px;height:20px;border:4px solid white;background:#8060e7;border-radius:50%;box-shadow:0 2px 9px rgba(0,0,0,.16);transform:translate(-50%,-50%);transition:left .3s}
+.fh-risk-labels{display:flex;justify-content:space-between;font-size:10px;color:#a49bb3;margin-top:12px}
+.fh-support-text{font-size:12px;color:#857e96;line-height:1.8}
+.fh-savings-amount{font-size:29px;font-weight:800;letter-spacing:-.8px;margin:34px 0 23px}.fh-savings-amount span{font-size:13px;font-weight:500;color:#aaa2b7;letter-spacing:0}
+.fh-progress-label{font-size:11px;color:#92899f;margin-bottom:11px}.fh-progress-label strong{color:#7957e2}
+.fh-progress{height:11px;background:#eee9fa;border-radius:999px;overflow:hidden}.fh-progress .progress-bar{background:linear-gradient(90deg,#8362e9,#b19afa);border-radius:999px;transition:width .3s}
+.fh-savings-tip{margin-top:25px;background:#edf9f3;border-radius:12px;padding:15px;display:flex;align-items:center;gap:10px;color:#2c9e77;font-size:12px;line-height:1.5}
+.fh-insight{display:flex;align-items:flex-start;gap:12px;padding:19px;border-radius:14px}.fh-insight.success{background:#eaf9f1}.fh-insight.warning{background:#fff6e9}.fh-insight.info{background:#f1edff}
+.fh-insight-icon{width:34px;height:34px;flex-shrink:0;display:grid;place-items:center;border-radius:10px;background:rgba(255,255,255,.7)}.fh-insight.success .fh-insight-icon{color:#299f76}.fh-insight.warning .fh-insight-icon{color:#b98230}.fh-insight.info .fh-insight-icon{color:#805fe1}
+.fh-insight h3{font-size:12px;font-weight:800;margin:1px 0 7px}.fh-insight p{font-size:11px;color:#777082;line-height:1.75}
+.fh-disclaimer{font-size:11px;color:#a09aaf;line-height:1.7;margin:0 0 12px}
+@media(max-width:767.98px){.fh-hero{padding:26px;min-height:auto}.fh-card{padding:21px}.fh-score-ring{width:164px;height:164px}.fh-score-center{width:133px;height:133px}.fh-score-center strong{font-size:44px}}
+@media(max-width:420px){.fh-hero h1{font-size:23px}.fh-metric{padding:17px}.fh-forecast{padding:17px}.fh-outlook-list>div{font-size:11px}}

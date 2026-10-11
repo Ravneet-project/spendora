@@ -1,0 +1,44 @@
+.si-card, .si-card * { box-sizing: border-box; }
+.si-card { width:100%; min-width:0; padding:25px; border:1px solid #eee8f8; border-radius:22px; background:#fff; color:#302744; font-family:inherit; }
+.si-heading { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:22px; }
+.si-eyebrow { color:#8667eb; font-size:11px; font-weight:800; letter-spacing:1px; }
+.si-heading h2 { font-size:22px; font-weight:800; margin:7px 0; }
+.si-heading p, .si-description, .si-disclaimer { color:#948ba5; font-size:12px; line-height:1.7; margin:0; }
+.si-reset { flex-shrink:0; display:inline-flex; align-items:center; gap:7px; border:1px solid #f4ced5; background:#fff7f8; color:#c14b61; border-radius:10px; padding:10px 13px; font-size:12px; font-weight:700; cursor:pointer; }
+.si-overview { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; margin-bottom:22px; }
+.si-metric { min-width:0; padding:20px; border-radius:16px; }
+.si-purple { background:#f0eaff; }.si-green { background:#e9f8f1; }.si-peach { background:#fff1e8; }
+.si-metric span { display:block; color:#786f87; font-size:12px; margin-bottom:9px; }
+.si-metric strong { display:block; font-size:23px; font-weight:800; overflow-wrap:anywhere; }
+.si-columns { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); gap:20px; align-items:stretch; }
+.si-panel { min-width:0; padding:21px; border:1px solid #ece7f5; border-radius:17px; background:#fff; }
+.si-panel h3 { display:flex; align-items:center; gap:9px; font-size:15px; font-weight:800; margin:0 0 19px; }
+.si-panel h3 i { color:#8667eb; }
+.si-source-list { display:grid; gap:12px; }
+.si-source-row { display:grid; grid-template-columns:38px minmax(0,1fr) minmax(105px,135px) 34px; align-items:end; gap:9px; min-width:0; padding:13px; border:1px solid #eeeaf7; border-radius:12px; background:#fdfcff; }
+.si-source-icon { display:grid; place-items:center; height:38px; width:38px; border-radius:10px; background:#eee8ff; color:#8667eb; margin-bottom:1px; }
+.si-name-field,.si-amount-field { display:flex; flex-direction:column; min-width:0; gap:6px; }
+.si-name-field > span,.si-amount-field > span { color:#8e849d; font-size:10px; font-weight:700; }
+.si-name-field > input,.si-currency { width:100%; min-width:0; height:40px; border:1px solid #e3deed; border-radius:9px; background:#fff; }
+.si-name-field > input { padding:0 10px; color:#302744; font-size:12px; }
+.si-currency { display:flex; align-items:center; overflow:hidden; }
+.si-currency b { padding:0 9px; color:#786b95; font-size:12px; border-right:1px solid #eeeaf4; }
+.si-currency input { flex:1; width:100%; min-width:0; height:100%; padding:0 7px; border:0; outline:0; background:transparent; color:#302744; font-size:12px; }
+.si-name-field input:focus,.si-currency:focus-within { outline:2px solid #d4c7ff; border-color:#a78bf4; }
+.si-delete { width:34px; height:40px; border:0; border-radius:9px; background:#fff0f2; color:#c65d6b; cursor:pointer; }
+.si-add-row { display:grid; grid-template-columns:minmax(0,1fr) minmax(105px,135px) 65px; gap:9px; align-items:end; margin-top:15px; }
+.si-add-button { height:40px; border:0; border-radius:9px; background:#8667eb; color:#fff; font-size:12px; font-weight:700; cursor:pointer; }
+.si-empty { color:#9288a2; font-size:12px; padding:15px; border:1px dashed #dcd4ee; border-radius:10px; }
+.si-savings-panel { background:#fcfbff; }
+.si-description { margin:0 0 19px; }
+.si-savings-label { display:block; margin-bottom:8px; font-size:12px; font-weight:700; }
+.si-savings-input { height:43px; }
+.si-slider { display:block; width:100%; accent-color:#8667eb; margin:23px 0; cursor:pointer; }
+.si-savings-metrics { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:11px; }
+.si-savings-metrics > div { min-width:0; padding:14px; background:#fff; border:1px solid #eeeaf5; border-radius:12px; }
+.si-savings-metrics span { display:block; color:#9a90a8; font-size:11px; margin-bottom:7px; }
+.si-savings-metrics strong { font-size:17px; overflow-wrap:anywhere; }
+.si-note { display:flex; gap:8px; margin-top:16px; padding:13px; background:#e8f8ef; border-radius:11px; color:#278c68; font-size:11px; line-height:1.6; }
+.si-disclaimer { margin-top:16px; }
+@media (max-width:1100px) { .si-columns { grid-template-columns:1fr; } }
+@media (max-width:650px) { .si-card { padding:15px; } .si-heading { flex-direction:column; } .si-overview { grid-template-columns:1fr; gap:9px; } .si-metric { padding:15px; } .si-source-row { grid-template-columns:32px minmax(0,1fr) 34px; } .si-source-icon { width:32px; } .si-source-row .si-amount-field { grid-column:2; } .si-source-row .si-delete { grid-column:3; grid-row:1 / span 2; align-self:center; } .si-add-row { grid-template-columns:minmax(0,1fr) 80px; } .si-add-row .si-name-field { grid-column:1 / -1; } .si-add-button { grid-column:2; } .si-panel { padding:14px; } }

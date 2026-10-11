@@ -1,0 +1,383 @@
+
+.sp-simulator {
+  color: #302744;
+  padding-bottom: 30px;
+}
+
+.sp-simulator * {
+  box-sizing: border-box;
+}
+
+.sp-sim-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 34px;
+  border-radius: 22px;
+  background: linear-gradient(
+    120deg,
+    #ede6ff,
+    #f6f2ff 60%,
+    #e4f8ef
+  );
+}
+
+.sp-sim-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #8667eb;
+  margin-bottom: 13px;
+}
+
+.sp-sim-hero h1 {
+  font-size: clamp(23px, 3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.sp-sim-hero p {
+  font-size: 12px;
+  color: #8c829b;
+  line-height: 1.8;
+  max-width: 490px;
+}
+
+.sp-sim-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  color: #7655d8;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sp-sim-hero-icon {
+  width: 95px;
+  height: 95px;
+  border-radius: 27px;
+  display: grid;
+  place-items: center;
+  background: #dfd4ff;
+  color: #8667eb;
+  font-size: 44px;
+  transform: rotate(-8deg);
+}
+
+.sp-sim-stat,
+.sp-sim-panel,
+.sp-sim-result {
+  background: #fff;
+  border: 1px solid #eeeaf6;
+  border-radius: 18px;
+}
+
+.sp-sim-stat {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.sp-sim-stat > i {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #f0eaff;
+  color: #8667eb;
+  border-radius: 12px;
+  font-size: 19px;
+}
+
+.sp-sim-stat span {
+  color: #978da6;
+  font-size: 11px;
+}
+
+.sp-sim-stat strong {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.sp-sim-panel {
+  padding: 25px;
+}
+
+.sp-sim-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 27px;
+}
+
+.sp-sim-panel-head h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.sp-sim-panel-head h2 i {
+  color: #8667eb;
+}
+
+.sp-sim-panel-head p {
+  margin: 0;
+  color: #a097ad;
+  font-size: 11px;
+}
+
+.sp-sim-tag {
+  background: #f0eaff;
+  color: #8667eb;
+  padding: 9px 12px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.sp-sim-category {
+  margin-bottom: 25px;
+}
+
+.sp-sim-category-head,
+.sp-sim-category-head > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sp-sim-category-head {
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.sp-sim-category-head i {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 10px;
+  background: #f1ebff;
+  color: #8667eb;
+  font-size: 17px;
+}
+
+.sp-sim-category-head strong,
+.sp-sim-category-head span {
+  font-size: 12px;
+}
+
+.sp-sim-category .form-range {
+  accent-color: #8667eb;
+}
+
+.sp-sim-category .form-range::-webkit-slider-thumb {
+  background: #8667eb;
+}
+
+.sp-sim-category .form-range::-moz-range-thumb {
+  background: #8667eb;
+}
+
+.sp-sim-plan-summary {
+  padding: 18px;
+  border-radius: 13px;
+  background: #f8f5ff;
+}
+
+.sp-sim-plan-summary > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.sp-sim-plan-summary span {
+  color: #8b819b;
+}
+
+.sp-sim-negative {
+  color: #dc6475;
+}
+
+.sp-sim-scenario {
+  margin-bottom: 21px;
+}
+
+.sp-sim-scenario label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sp-sim-scenario label i {
+  color: #8667eb;
+  font-size: 17px;
+}
+
+.sp-sim-scenario .input-group-text {
+  background: #f5f1ff;
+  border-color: #e8e0f5;
+  color: #8667eb;
+}
+
+.sp-sim-scenario .form-control {
+  border-color: #e8e0f5;
+  padding: 11px;
+  font-size: 13px;
+}
+
+.sp-sim-scenario .form-control:focus {
+  border-color: #a68df1;
+  box-shadow: 0 0 0 3px rgba(134,103,235,.12);
+}
+
+.sp-sim-reset {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  background: #f2edff;
+  color: #7655d8;
+  border: 1px solid #e7defa;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sp-sim-reset:hover {
+  background: #e7ddff;
+  color: #6542ce;
+}
+
+.sp-sim-result {
+  padding: 27px;
+  height: 100%;
+}
+
+.sp-sim-result > span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: #958ba4;
+  margin-bottom: 13px;
+}
+
+.sp-sim-result > strong {
+  display: block;
+  font-size: clamp(27px, 3vw, 38px);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.sp-sim-result p {
+  color: #a098ad;
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 11px 0 0;
+}
+
+.sp-sim-result-active {
+  background: linear-gradient(120deg, #f2ecff, #eaf9f1);
+  border-color: #e4d9fa;
+}
+
+.sp-sim-result-active > strong {
+  color: #7553d7;
+}
+
+.sp-sim-insight {
+  display: flex;
+  gap: 15px;
+  margin-top: 18px;
+  padding: 22px;
+  border: 1px solid #dcefe6;
+  border-radius: 16px;
+  background: #f0faf5;
+}
+
+.sp-sim-insight-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #ddf5e8;
+  color: #29a77d;
+  font-size: 21px;
+}
+
+.sp-sim-insight h3 {
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0 0 7px;
+}
+
+.sp-sim-insight p {
+  font-size: 12px;
+  color: #7e9288;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.sp-sim-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.sp-sim-bottom > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #9b91a8;
+}
+
+.sp-sim-disclaimer {
+  font-size: 11px;
+  color: #a097ad;
+  line-height: 1.8;
+  margin-top: 24px;
+}
+
+@media (max-width: 767px) {
+  .sp-sim-hero {
+    padding: 25px;
+  }
+
+  .sp-sim-hero-icon {
+    display: none;
+  }
+
+  .sp-sim-panel {
+    padding: 20px;
+  }
+
+  .sp-sim-panel-head {
+    align-items: flex-start;
+  }
+}
